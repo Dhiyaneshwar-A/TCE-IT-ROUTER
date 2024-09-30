@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+  <head>
+    <title>TCE ROUTER</title>
+    <link rel="icon" type="image/png" href="Logo.jpg">
+    <style>
+      #img{
+        position: relative;
+      }
+
+      #final {
+        position: absolute;
+      }
+      .animate_top{
+        position:relative;animation:animatetop 0.5s
+      }
+      @keyframes animatetop{
+        from{top:-300px;opacity:0} to{top:0;opacity:1}
+      }
+    </style>
+  </head>
+  <body>
+  <Center><p id="it">Department of Information Technology</p></Center>
+  <img id="img" src="">
+  <a href="Home.html"><img id="logo" src="Logo.jpg" height="100"></a>
+  <p id="route"></p> 
+  <p id="note">Kindly Use Right Side Stairs</p>
+  <p id="note">Click logo to goback to Home</p>
+  <button id="back" onclick="history.back()"><<</button>
+  <div class="animate_top"><p id="final"><img src="Logo.jpg" height="60"></p></div> 
+<script>
+  var result=localStorage.getItem("loc");
+  var pic;
+  floor=0;
+  if(result=="ML"){
+    document.getElementById("route").innerHTML="Go to first floor (Right side steps)and go straight ML Lab will be at the end";
+    floor=1;
+    document.getElementById("final").style.marginLeft="48%";
+    document.getElementById("final").style.marginTop="-14%";
+  }
+  else if(result=="Cloud"){
+    document.getElementById("route").innerHTML="Take Left and go straight and again take left and you'll find Cloud system lab";
+    document.getElementById("final").style.marginLeft="42.5%";
+    document.getElementById("final").style.marginTop="-40%";
+  }
+  else if(result=="Motorolla"){
+    document.getElementById("route").innerHTML="Go to first floor (Right side steps) and take right,at the end you'll find Enterprose Mobility Lab(Motorolla)";
+    floor=1;
+    document.getElementById("final").style.marginLeft="90%";
+    document.getElementById("final").style.marginTop="-42.5%";
+  }
+  else if(result=="DataAnalytics"){
+    document.getElementById("route").innerHTML="Goto second floor and take 2nd right you'll find DataAnalytics Lab";
+    floor=2;
+    document.getElementById("final").style.marginLeft="44.5%";
+    document.getElementById("final").style.marginTop="-32.5%";
+  }
+  else if(result=="DataScience"){
+    document.getElementById("route").innerHTML="Take right and go straight you'll find DataScience Lab on your right side";
+    document.getElementById("final").style.marginLeft="93.5%";
+    document.getElementById("final").style.marginTop="-27%";
+  }
+  else if(result=="Cyber"){
+    document.getElementById("route").innerHTML="Go to first floor (Right side steps), take right and take left Cyber Forensics Lab is at the end";
+    floor=1;
+    document.getElementById("final").style.marginLeft="68%";
+    document.getElementById("final").style.marginTop="-40.5%";
+  }
+  else if(result=="SmartSecure"){
+    document.getElementById("route").innerHTML="Take left and again take right you'll find Smart Secure lab at end";
+    document.getElementById("final").style.marginLeft="44%";
+    document.getElementById("final").style.marginTop="-31%";
+  }
+  else if(result=="IOT"){
+    document.getElementById("route").innerHTML="Go to first floor (Right side steps) and take right and take left you'll find IOT Lab on the line ";
+    floor=1;
+    document.getElementById("final").style.marginLeft="79%";
+    document.getElementById("final").style.marginTop="-40%";
+  }
+  else if(result=="Intelligent"){
+    document.getElementById("route").innerHTML="Goto second floor and take 2nd right you'll find IICs Lab";
+    floor=2;
+    document.getElementById("final").style.marginLeft="43.5%";
+    document.getElementById("final").style.marginTop="-23.5%";
+  }
+  else if(result=="Business"){
+    document.getElementById("route").innerHTML="Goto second floor and take right you'll find BusinessAnalytics Lab";
+    floor=2;
+    document.getElementById("final").style.marginLeft="93%";
+    document.getElementById("final").style.marginTop="-27.5%";
+  }
+  else if(result=="Cognitive"){
+    document.getElementById("route").innerHTML="Goto first floor go straight and at end take left and again take left you'll find Cognitive Lab at end";
+    floor=1;
+    document.getElementById("final").style.marginLeft="42.5%";
+    document.getElementById("final").style.marginTop="-40%";
+  }
+  else if(result=="ig1"){
+    document.getElementById("route").innerHTML="Take left you'll find IG1 at the end";
+    document.getElementById("final").style.marginLeft="48%";
+    document.getElementById("final").style.marginTop="-12%";
+  }
+  else if(result=="ig2"){
+    document.getElementById("route").innerHTML="Take left you'll find IG2";
+    document.getElementById("final").style.marginLeft="52.5%";
+    document.getElementById("final").style.marginTop="-10%";
+  }
+  else if(result=="ig3"){
+    document.getElementById("route").innerHTML="Take right and you'll find IG3";
+    document.getElementById("final").style.marginLeft="78%";
+    document.getElementById("final").style.marginTop="-10%";
+  }
+  else if(result=="ig4"){
+    document.getElementById("route").innerHTML="Take right and go straight you'll find IG4";
+    document.getElementById("final").style.marginLeft="86%";
+    document.getElementById("final").style.marginTop="-10%";
+  }
+  else if(result=="ig5"){
+    document.getElementById("route").innerHTML="Take right and go straight you'll find IG4 at the end";
+    document.getElementById("final").style.marginLeft="93%";
+    document.getElementById("final").style.marginTop="-10%";
+  }
+  else if(result=="ig6"){
+    document.getElementById("route").innerHTML="Take left and again take right and again take right you'll find IG6";
+    document.getElementById("final").style.marginLeft="68.5%";
+    document.getElementById("final").style.marginTop="-38%";
+  }
+  else if(result=="ig7"){
+    document.getElementById("route").innerHTML="Take right and go straight and you'll find IG7 on your left";
+    document.getElementById("final").style.marginLeft="79%";
+    document.getElementById("final").style.marginTop="-38%";
+  }
+  else if(result=="ig8"){
+    document.getElementById("route").innerHTML="Take right and go straight and you'll find IG8";
+    document.getElementById("final").style.marginLeft="90%";
+    document.getElementById("final").style.marginTop="-38%";
+  }
+  else if(result=="if1"){
+    document.getElementById("route").innerHTML="Go to first floor(right side steps) and go straight you'll find IF1 at the end";
+    floor=1;
+    document.getElementById("final").style.marginLeft="71%";
+    document.getElementById("final").style.marginTop="-14%";
+  }
+  else if(result=="if2"){
+    document.getElementById("route").innerHTML="Go to first floor(right side steps) and go straight you'll find IF2";
+    floor=1;
+    document.getElementById("final").style.marginLeft="84%";
+    document.getElementById("final").style.marginTop="-12%";
+  }
+  else if(result=="if3"){
+    document.getElementById("route").innerHTML="Go to first floor(right side steps) and go straight you'll find IF3";
+    floor=1;
+    document.getElementById("final").style.marginLeft="94%";
+    document.getElementById("final").style.marginTop="-12%";
+  }
+  else if(result=="if4"){
+    document.getElementById("route").innerHTML="Go to first floor(right side steps) and take right you'll find IF4";
+    floor=1;
+    document.getElementById("final").style.marginLeft="93%";
+    document.getElementById("final").style.marginTop="-24%";
+  }
+  else if(result=="is1"){
+    document.getElementById("route").innerHTML="Goto second floor and go straight from steps IS1 is at end";
+    floor=2;
+    document.getElementById("final").style.marginLeft="49%";
+    document.getElementById("final").style.marginTop="-12%";
+  }
+  else if(result=="is2"){
+    document.getElementById("route").innerHTML="Goto second floor and go straight from steps you'll find IS2";
+    floor=2;
+    document.getElementById("final").style.marginLeft="64%";
+    document.getElementById("final").style.marginTop="-12%";
+  }
+  else if(result=="is3"){
+    document.getElementById("route").innerHTML="Goto second floor and go straight from steps you'll find IS3";
+    floor=2;
+    document.getElementById("final").style.marginLeft="73%";
+    document.getElementById("final").style.marginTop="-12%";
+  }
+  else if(result=="is4"){
+    document.getElementById("route").innerHTML="Goto second floor and IS4 is nearby steps";
+    floor=2;
+    document.getElementById("final").style.marginLeft="84%";
+    document.getElementById("final").style.marginTop="-12%";
+  }
+  else if(result=="is5"){
+    document.getElementById("route").innerHTML="Goto second floor and IS4 is nearby steps";
+    floor=2;
+    document.getElementById("final").style.marginLeft="92.5%";
+    document.getElementById("final").style.marginTop="-12%";
+  }
+  else if(result=="sf1"){
+    document.getElementById("route").innerHTML="Go to first floor(right side steps) and go straight you'll find Staffroom 1 at the end";
+    floor=1;
+    document.getElementById("final").style.marginLeft="52.5%";
+    document.getElementById("final").style.marginTop="-14%";
+  }
+  else if(result=="sf2"){
+    document.getElementById("route").innerHTML="Take left and again take right you'll find Staffroom 2";
+    document.getElementById("final").style.marginLeft="44%";
+    document.getElementById("final").style.marginTop="-21%";
+  }
+  else if(result=="sf3"){
+    document.getElementById("route").innerHTML="Goto second floor and go straight from steps you'll find Staffroom 3 at end";
+    floor=2;
+    document.getElementById("final").style.marginLeft="56%";
+    document.getElementById("final").style.marginTop="-15%";
+  }
+  else if(result=="mca"){
+    document.getElementById("route").innerHTML="Take left and you'll find MCA Staffroom";
+    document.getElementById("final").style.marginLeft="56.5%";
+    document.getElementById("final").style.marginTop="-12%";
+  }
+  else if(result=="tutorial"){
+    document.getElementById("route").innerHTML="Goto firstfloor and go straight and take left at end and you'll find Tutorial Hall at your left";
+    floor=1;
+    document.getElementById("final").style.marginLeft="46.5%";
+    document.getElementById("final").style.marginTop="-39.5%";
+
+  }
+  else if(result=="itoff"){
+    document.getElementById("route").innerHTML="Goto first floor and go straight you'll find IT Office";
+    floor=1;
+    document.getElementById("final").style.marginLeft="59%";
+    document.getElementById("final").style.marginTop="-12%";
+  }
+  else if(result=="Seminarhall"){
+    document.getElementById("route").innerHTML="Goto firstfloor and go straight and take left at end and you'll find Seminar Hall";
+    document.getElementById("final").style.marginLeft="44%";
+    document.getElementById("final").style.marginTop="-25%";
+    floor=1;
+  }
+  else if(result=="math&comp"){
+    document.getElementById("route").innerHTML="Take left and again take left and go straight and you'll find Dept of Applied Mathematics & Computational Science right side";
+    document.getElementById("final").style.marginLeft="58%";
+    document.getElementById("final").style.marginTop="-42.5%";
+  }
+  else if(result=="comp"){
+    document.getElementById("route").innerHTML="Take left and again take left and go straight and you'll find Dept of Computer science Application on left";
+    document.getElementById("final").style.marginLeft="46%";
+    document.getElementById("final").style.marginTop="-42.5%";
+  }
+  if(floor==2){
+    pic="secondfloor.jpg"
+    document.getElementById("img").src=pic;
+  }
+  else if(floor==1){
+    pic="firstfloor.jpg"
+    document.getElementById("img").src=pic;
+  }
+  else{
+    pic="groundfloor.jpg"
+    document.getElementById("img").src=pic;
+  }
+  
+</script>
+<style>
+  #it{
+    margin-top: 4%;
+    font-size:200%;
+    font-style: oblique;
+    font-variant: small-caps;
+    font-family:georgia;
+  }
+  #img{
+    float:right;
+    width:750px;
+    margin-right:2%;
+    margin-top: 6%;
+ }
+  #logo{
+    margin-top: -6%;
+    margin-left:18%
+}
+#note,#route,#back{
+  color:black;
+  font-size:25px;
+  border:2px solid;
+  border-color: red;
+  background-color:white;
+  border-radius:12px;
+  padding:10px;
+  width:25%;
+  text-align: center;
+  margin-top:5%;
+  margin-left: 5%;
+}
+#route,#back{
+  border-color: rgb(166, 177, 216);
+  background-color:rgb(166, 177, 216);
+  margin-top:10%;
+}
+#back{
+  margin-top:3%;
+  width:4%;
+  margin-left:15%;
+  border-color: black;
+}
+#note{
+  margin-top:3%;
+}
+</style>
+</body>
+</html>

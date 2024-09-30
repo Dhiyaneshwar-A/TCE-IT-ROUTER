@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<head>
+    <title>TCE ROUTER</title>
+    <link rel="icon" type="image/png" href="Logo.jpg">
+  </head>
+<Center>
+    <p id="it">IT DEPARTMENT</p>
+</Center>
+<script>
+    function design(x){
+     x.style.background="white";
+   
+   }
+   function normal(x){
+       x.style.background="rgb(166, 177, 216)";
+   }
+    function load(value){
+    localStorage.setItem("loc",value)
+}
+</script>
+<Center><a href="Home.html"><img id="logo" src="Logo.jpg" height="120"></a>
+    <h2 id="tcerouter">TCE ROUTER</h2>
+    <button id="back" onclick="history.back()"><<</button>
+    <button id="forward" onclick="history.forward()">>></button></Center>
+<form action="Router.html">
+<div id="left">
+    <button class="igf" onmouseover="design(this)" onmouseout="normal(this)" value="ig1" onclick="load(value)">IG1</button><br><br>
+    <button class="ig" onmouseover="design(this)" onmouseout="normal(this)" value="ig2" onclick="load(value)">IG2</button><br><br>
+    <button class="ig"onmouseover="design(this)" onmouseout="normal(this)" value="ig3" onclick="load(value)">IG3</button><br><br>
+    <button class="ig" onmouseover="design(this)" onmouseout="normal(this)" value="ig4" onclick="load(value)">IG4</button><br><br>
+    <button class="ig" onmouseover="design(this)" onmouseout="normal(this)" value="ig5" onclick="load(value)">IG5</button><br><br>
+    <button class="ig" onmouseover="design(this)" onmouseout="normal(this)" value="ig6" onclick="load(value)">IG6</button><br><br>
+    <button class="ig" onmouseover="design(this)" onmouseout="normal(this)" value="ig7" onclick="load(value)">IG7</button><br><br>
+    <button class="ig" onmouseover="design(this)" onmouseout="normal(this)" value="ig8" onclick="load(value)">IG8</button><br><br>
+</div>
+<div id="center">
+    <button class="iff" onmouseover="design(this)" onmouseout="normal(this)" value="if1" onclick="load(value)">IF1</button><br><br>
+    <button class="if" onmouseover="design(this)" onmouseout="normal(this)" value="if2" onclick="load(value)">IF2</button><br><br>
+    <button class="if" onmouseover="design(this)" onmouseout="normal(this)" value="if3" onclick="load(value)">IF3</button><br><br>
+    <button class="if" onmouseover="design(this)" onmouseout="normal(this)" value="if4" onclick="load(value)">IF4</button><br><br>
+</div>
+<div id="right">
+    <button class="isf" onmouseover="design(this)" onmouseout="normal(this)" value="is1" onclick="load(value)">IS1</button><br><br>
+    <button class="is" onmouseover="design(this)" onmouseout="normal(this)" value="is2" onclick="load(value)">IS2</button><br><br>
+    <button class="is" onmouseover="design(this)" onmouseout="normal(this)" value="is3" onclick="load(value)">IS3</button><br><br>
+    <button class="is" onmouseover="design(this)" onmouseout="normal(this)" value="is4" onclick="load(value)">IS4</button><br><br>
+    <button class="is" onmouseover="design(this)" onmouseout="normal(this)" value="is5" onclick="load(value)">IS5</button><br><br>
+</div>
+</form>
+<style>
+    #back,#forward{
+  font-size:25px;
+  border:2px solid;
+  border-radius:12px;
+  padding:10px;
+  width:25%;
+  text-align: center;
+  background-color:rgb(166, 177, 216);
+  width:4%;
+  border-color: black;
+}
+#back{
+  margin-left: -1%;
+
+}
+
+    #left{
+        margin-top: -8%;
+    }
+    #it{
+    margin-top: 4%;
+    font-size:170%;
+    font-style: oblique;
+    font-variant: small-caps;
+    font-family:georgia;
+    }
+    
+    #tcerouter{
+        margin-top:-0.05%;
+        font-size:180%;
+
+    }
+    #logo{
+        margin-left:-1%;
+    }
+    .ig,.igf{
+        margin-left: 8%;
+    }
+    
+    .if,.iff,.isf,.is,.igf,.ig{
+    font-size:180%;
+    font-style: oblique;
+    font-variant: small-caps;
+    font-family:georgia;
+    border:2px solid;
+    border-color: rgb(166, 177, 216);
+    background-color:rgb(166, 177, 216);
+    border-radius:12px;
+    padding:5px;
+    width:200px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#center{
+    float: right;
+    margin-top: -20%;
+    margin-right:43%;
+    
+}
+#right{
+        float: right;
+        margin-top: -25%;
+        margin-right:10%;
+    }
+
+</style>
+</html>
